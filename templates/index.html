@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comak Brothers Landscaping | Design, Build &amp; Maintenance | North Shore, MA</title>
+<meta name="description" content="Family-owned since 1978. Comak Brothers Landscaping designs, builds, and maintains patios, water features, lighting, and irrigation across Greater Boston, the North Shore, and Southern New Hampshire.">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='site.css') }}">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ==========================================================================
+     Header
+     ========================================================================== -->
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="#top">
+      <svg class="logo-mark" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comak Bros. logo">
+        <rect width="42" height="42" rx="12" fill="#f2724a"/>
+        <text x="21" y="27" text-anchor="middle" font-family="Baloo 2, sans-serif" font-weight="700" font-size="17" fill="#fff">CB</text>
+      </svg>
+      <span class="logo-text">
+        <span class="name">Comak Bros.</span>
+        <span class="sub">Landscaping &middot; Est. 1978</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#service-area">Service Area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-phone" href="tel:9785351227">
+        <span class="label">Free Estimates</span>
+        <span class="number">978-535-1227</span>
+      </a>
+      <a class="btn btn-primary" href="#contact">Request a Proposal</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#service-area">Service Area</a>
+    <a href="#contact">Contact</a>
+    <a class="mobile-call" href="tel:9785351227">Call 978-535-1227</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ==========================================================================
+     Hero
+     ========================================================================== -->
+<section class="hero" id="top">
+  <div class="container hero-inner">
+    <div>
+      <span class="eyebrow">Family-Owned &middot; North Shore, MA</span>
+      <h1>Outdoor spaces built to <span class="accent">last a lifetime</span></h1>
+      <p class="lede">For over 45 years, Comak Brothers Landscaping has designed, built, and maintained outdoor living spaces across Greater Boston, the North Shore, and Southern New Hampshire &mdash; from stone patios and water features to landscape lighting and irrigation.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Request a Free Proposal
+        </a>
+        <a class="btn btn-secondary" href="tel:9785351227">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92Z"/></svg>
+          978-535-1227
+        </a>
+      </div>
+      <div class="hero-promo">
+        <span class="dot">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </span>
+        Licensed, insured &amp; family-owned since 1978
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <img src="{{ url_for('static', filename='img/outdoor-room-fireplace.jpg') }}" alt="Stone patio and fireplace outdoor living space built by Comak Brothers Landscaping">
+      <div class="hero-stat-chip">
+        <span class="stat">48</span>
+        <span class="stat-label">Years building North Shore landscapes</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     Trust strip
+     ========================================================================== -->
+<section class="trust-strip">
+  <div class="container">
+    <span class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      Licensed &amp; Insured
+    </span>
+    <span class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      Family-Owned Since 1978
+    </span>
+    <span class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      Free On-Site Estimates
+    </span>
+    <span class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      45+ Towns Served
+    </span>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     Services
+     ========================================================================== -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">What We Do</span>
+      <h2>Design, build &amp; maintenance &mdash; all under one roof</h2>
+      <p>Seven core services, one project manager from first sketch to final walkthrough.</p>
+    </div>
+
+    <div class="service-grid">
+
+      <article class="service-card">
+        <div class="service-card-media">
+          <img src="{{ url_for('static', filename='img/design-build.jpg') }}" alt="Landscape design and build project by Comak Brothers Landscaping">
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+          </div>
+          <h3>Landscape Design &amp; Build</h3>
+          <p>From concept to construction, we design and build outdoor spaces that fit how you actually live.</p>
+          <a class="btn btn-outline" href="#contact">Ask About This</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card-media">
+          <div class="media-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+            <span>Add a patio / hardscape photo</span>
+          </div>
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          </div>
+          <h3>Patios, Stonework &amp; Driveways</h3>
+          <p>Durable hardscaping &mdash; patios, walkways, pool decks, and driveways built for New England winters.</p>
+          <a class="btn btn-outline" href="#contact">Ask About This</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card-media">
+          <img src="{{ url_for('static', filename='img/lighting.jpg') }}" alt="Landscape lighting installation by Comak Brothers Landscaping">
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2.3h6c0-1.1.4-1.8 1-2.3A7 7 0 0 0 12 2Z"/></svg>
+          </div>
+          <h3>Landscape Lighting</h3>
+          <p>Low-voltage lighting that extends your outdoor living into the evening and adds year-round curb appeal.</p>
+          <a class="btn btn-outline" href="#contact">Ask About This</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card-media">
+          <img src="{{ url_for('static', filename='img/outdoor-kitchen.jpg') }}" alt="Outdoor kitchen and living room built by Comak Brothers Landscaping">
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 3l9 6.5"/><path d="M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10"/></svg>
+          </div>
+          <h3>Outdoor Rooms</h3>
+          <p>Fireplaces, kitchens, and living spaces that turn your backyard into another room of the house.</p>
+          <a class="btn btn-outline" href="#contact">Ask About This</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card-media">
+          <img src="{{ url_for('static', filename='img/water-feature.jpg') }}" alt="Waterfall and pond water feature built by Comak Brothers Landscaping">
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s7 8.5 7 13a7 7 0 1 1-14 0c0-4.5 7-13 7-13Z"/></svg>
+          </div>
+          <h3>Water Features</h3>
+          <p>Waterfalls, ponds, and streams engineered for beauty and built to run reliably for years.</p>
+          <a class="btn btn-outline" href="#contact">Ask About This</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card-media">
+          <div class="media-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+            <span>Add an irrigation photo</span>
+          </div>
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 13v8"/><path d="M8 13v8"/><path d="M12 15v8"/><path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"/></svg>
+          </div>
+          <h3>Lawn Irrigation</h3>
+          <p>Custom-designed irrigation systems that keep your lawn and plantings healthy without the guesswork.</p>
+          <a class="btn btn-outline" href="#contact">Ask About This</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card-media">
+          <div class="media-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+            <span>Add a grounds maintenance photo</span>
+          </div>
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="m14.47 14.48 5.53 5.52"/><path d="m8.12 8.12 4.88 4.88"/></svg>
+          </div>
+          <h3>Grounds Maintenance</h3>
+          <p>Ongoing mowing, cleanups, and seasonal care to keep your property looking its best year-round.</p>
+          <a class="btn btn-outline" href="#contact">Ask About This</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     About
+     ========================================================================== -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-copy">
+      <span class="eyebrow">Our Story</span>
+      <h2>Two brothers, one philosophy: do it right</h2>
+      <p>In 1978, Bruce Comak and his brother Barry &mdash; new college graduates &mdash; started a partnership that has grown for decades. They built their reputation by strictly adhering to a philosophy of quality work, attention to detail, and service above and beyond customer expectations.</p>
+      <p>From the initial consultation, through design and development, to construction and implementation, Comak Bros. manages every project personally to ensure satisfaction, quality, and integrity in all aspects of the work &mdash; a commitment that continues today, decades later.</p>
+      <ul class="about-list">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Family-owned and operated since 1978
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          One project manager, consultation through completion
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          The Comak Guarantee on plantings, hardscape &amp; irrigation
+        </li>
+      </ul>
+    </div>
+
+    <div class="about-art">
+      <div class="chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/></svg>
+        <strong>1978</strong>
+        <span>Founded by Bruce &amp; Barry Comak</span>
+      </div>
+      <div class="chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+        <strong>1&nbsp;Yr</strong>
+        <span>Written guarantee on our work</span>
+      </div>
+      <div class="chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        <strong>45+</strong>
+        <span>Towns across MA &amp; NH</span>
+      </div>
+      <div class="chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <strong>100%</strong>
+        <span>Licensed &amp; insured</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     Why us (navy band)
+     ========================================================================== -->
+<section class="why" id="why-us">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Why Comak Bros.</span>
+      <h2>Nearly five decades of North Shore landscapes</h2>
+      <p>What a family-run crew gets right that a big franchise usually doesn&rsquo;t.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <span class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </span>
+        <h3>Family-Owned Since 1978</h3>
+        <p>Two brothers still involved in day-to-day operations, decades later.</p>
+      </div>
+      <div class="why-item">
+        <span class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+        </span>
+        <h3>Fully Licensed &amp; Insured</h3>
+        <p>Every project covered, start to finish, with no surprises.</p>
+      </div>
+      <div class="why-item">
+        <span class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 3v2h6V3"/><path d="m9 14 2 2 4-4"/></svg>
+        </span>
+        <h3>The Comak Guarantee</h3>
+        <p>A written 1-year guarantee on plantings, hardscape &amp; irrigation.</p>
+      </div>
+      <div class="why-item">
+        <span class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+        </span>
+        <h3>One Point of Contact</h3>
+        <p>The same project manager from consultation through completion.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     Gallery
+     ========================================================================== -->
+<section class="services" id="gallery">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Our Work</span>
+      <h2>A sample of recent projects</h2>
+      <p>Add more photos any time &mdash; the grid below is ready for a full portfolio.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="{{ url_for('static', filename='img/design-build.jpg') }}" alt="Stone walkway and landscape design project"></div>
+      <div class="gallery-item"><img src="{{ url_for('static', filename='img/design-build-2.jpg') }}" alt="Landscape design and planting project"></div>
+      <div class="gallery-item"><img src="{{ url_for('static', filename='img/lighting.jpg') }}" alt="Evening landscape lighting installation"></div>
+      <div class="gallery-item"><img src="{{ url_for('static', filename='img/outdoor-room-fireplace-2.jpg') }}" alt="Outdoor stone fireplace and patio seating"></div>
+      <div class="gallery-item"><img src="{{ url_for('static', filename='img/outdoor-kitchen-2.jpg') }}" alt="Outdoor kitchen with stone counter"></div>
+      <div class="gallery-item"><img src="{{ url_for('static', filename='img/water-feature-2.jpg') }}" alt="Backyard waterfall and pond"></div>
+      <div class="gallery-item"><img src="{{ url_for('static', filename='img/water-feature-3.jpg') }}" alt="Stone water feature with plantings"></div>
+      <div class="gallery-item add-photo">
+        <div class="media-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          <span>Add more photos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     Testimonials
+     ========================================================================== -->
+<section class="faq" id="reviews">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Reviews</span>
+      <h2>What clients are saying</h2>
+      <p>Swap these placeholder cards for real quotes from your happiest clients.</p>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <blockquote>&ldquo;Add a quote from a happy client here &mdash; what they hired you for and how it turned out.&rdquo;</blockquote>
+        <cite>&mdash; Add client name, town</cite>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <blockquote>&ldquo;Add a second testimonial here &mdash; a video testimonial from Heather LeDoyt is already on the old site if you want to transcribe it.&rdquo;</blockquote>
+        <cite>&mdash; Add client name, town</cite>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <blockquote>&ldquo;Add a third testimonial here, or link out to your Facebook reviews.&rdquo;</blockquote>
+        <cite>&mdash; Add client name, town</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     Service area
+     ========================================================================== -->
+<section class="about" id="service-area">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Where We Work</span>
+      <h2>Proudly serving the North Shore &amp; beyond</h2>
+      <p>Comak Brothers Landscaping serves Greater Boston, North Shore Massachusetts, and Southern New Hampshire, including:</p>
+    </div>
+    <div class="town-tags">
+      <span>Amesbury, MA</span><span>Andover, MA</span><span>Bedford, MA</span><span>Beverly, MA</span>
+      <span>Billerica, MA</span><span>Boxford, MA</span><span>Burlington, MA</span><span>Danvers, MA</span>
+      <span>Dracut, MA</span><span>Essex, MA</span><span>Everett, MA</span><span>Georgetown, MA</span>
+      <span>Gloucester, MA</span><span>Groveland, MA</span><span>Hamilton, MA</span><span>Ipswich, MA</span>
+      <span>Lawrence, MA</span><span>Lexington, MA</span><span>Lynnfield, MA</span><span>Malden, MA</span>
+      <span>Manchester-by-the-Sea, MA</span><span>Marblehead, MA</span><span>Medford, MA</span><span>Melrose, MA</span>
+      <span>Merrimac, MA</span><span>Middleton, MA</span><span>Nahant, MA</span><span>Newbury, MA</span>
+      <span>Newburyport, MA</span><span>North Andover, MA</span><span>North Reading, MA</span><span>Peabody, MA</span>
+      <span>Reading, MA</span><span>Rockport, MA</span><span>Rowley, MA</span><span>Salem, MA</span>
+      <span>Stoneham, MA</span><span>Swampscott, MA</span><span>Tewksbury, MA</span><span>Topsfield, MA</span>
+      <span>Wakefield, MA</span><span>Wenham, MA</span><span>West Boxford, MA</span><span>West Newbury, MA</span>
+      <span>Wilmington, MA</span><span>Winchester, MA</span><span>Winthrop, MA</span><span>Woburn, MA</span>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     CTA banner
+     ========================================================================== -->
+<div class="cta-banner-wrap">
+  <div class="cta-banner">
+    <h2>Ready to start your project?</h2>
+    <a class="btn btn-secondary" href="#contact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      Get My Free Proposal
+    </a>
+  </div>
+</div>
+
+<!-- ==========================================================================
+     Contact
+     ========================================================================== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Get In Touch</span>
+      <h2>Request your free proposal</h2>
+      <p>Tell us about your property and what you have in mind &mdash; we&rsquo;ll follow up to schedule a free on-site estimate.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-phone-block">
+          <span class="label">Call or Text</span>
+          <a class="number" href="tel:9785351227">978-535-1227</a>
+        </div>
+        <div class="contact-fact">
+          <span class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <div>
+            <h4>Comak Bros. Landscaping</h4>
+            <p>647 Lowell St, Peabody, MA 01960</p>
+          </div>
+        </div>
+        <div class="contact-fact">
+          <span class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <div>
+            <h4>The Comak Guarantee</h4>
+            <p>1-year limited guarantee on plantings, hardscape &amp; irrigation.</p>
+          </div>
+        </div>
+        <div class="contact-fact">
+          <span class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z"/></svg>
+          </span>
+          <div>
+            <h4>Follow Along</h4>
+            <p><a href="https://www.facebook.com/pages/Comak-Brothers-Landscaping/139509149433723" target="_blank" rel="noopener">Comak Brothers Landscaping on Facebook</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3>Free Proposal Request</h3>
+        <p>Fields marked <span class="req">*</span> are required.</p>
+
+        <div class="form-success" id="formSuccess" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>
+          <span>Thanks! This form isn&rsquo;t wired to send email yet &mdash; connect it to your inbox before launch.</span>
+        </div>
+
+        <form id="proposalForm">
+          <div class="field-row two">
+            <div class="field">
+              <label for="name">Full name <span class="req">*</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="phone">Phone <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel">
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email <span class="req">*</span></label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="address">Property address</label>
+            <input type="text" id="address" name="address" autocomplete="street-address">
+          </div>
+          <div class="field">
+            <label for="service">Service interested in</label>
+            <select id="service" name="service">
+              <option value="">Select a service&hellip;</option>
+              <option>Landscape Design &amp; Build</option>
+              <option>Patios, Stonework &amp; Driveways</option>
+              <option>Landscape Lighting</option>
+              <option>Outdoor Rooms</option>
+              <option>Water Features</option>
+              <option>Lawn Irrigation</option>
+              <option>Grounds Maintenance</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Tell us about your project</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Request My Free Proposal</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ==========================================================================
+     Footer
+     ========================================================================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" href="#top">
+          <svg class="logo-mark" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comak Bros. logo">
+            <rect width="42" height="42" rx="12" fill="#f2724a"/>
+            <text x="21" y="27" text-anchor="middle" font-family="Baloo 2, sans-serif" font-weight="700" font-size="17" fill="#fff">CB</text>
+          </svg>
+          <span class="logo-text">
+            <span class="name">Comak Bros.</span>
+            <span class="sub">Landscaping &middot; Est. 1978</span>
+          </span>
+        </a>
+        <p>Family-owned and operated since 1978, serving Greater Boston, the North Shore, and Southern New Hampshire.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Landscape Design &amp; Build</a></li>
+          <li><a href="#services">Patios &amp; Stonework</a></li>
+          <li><a href="#services">Landscape Lighting</a></li>
+          <li><a href="#services">Outdoor Rooms</a></li>
+          <li><a href="#services">Water Features</a></li>
+          <li><a href="#services">Lawn Irrigation</a></li>
+          <li><a href="#services">Grounds Maintenance</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#gallery">Photo Gallery</a></li>
+          <li><a href="#reviews">What Clients Are Saying</a></li>
+          <li><a href="#service-area">Service Area</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="https://www.facebook.com/pages/Comak-Brothers-Landscaping/139509149433723" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Comak Brothers Landscaping. All rights reserved.</span>
+      <span>647 Lowell St, Peabody, MA 01960 &middot; 978-535-1227</span>
+    </div>
+  </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/site.js') }}"></script>
+</body>
+</html>
