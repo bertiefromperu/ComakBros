@@ -1,1 +1,4 @@
-.claude/ # stops it being committed again
+.claude/
+.idea/
+__pycache__/
+.venv/
